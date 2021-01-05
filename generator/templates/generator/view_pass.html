@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>Your password is: </h1>
+      <p class="alert alert-success">{{ password }}</p>
+      <button class="btn btn-primary" type="button" name="button" onclick="location.reload()">Re-generate</button>
+      <a href="{% url 'home' %}"><button class="btn btn-danger" type="button" name="button">Generate another one!</button></a>
+    <div>
+  </body>
+</html>
